@@ -14,6 +14,11 @@ public class WebConnector {
 	WebDriver driver = null;
 	Properties OR=null;
 	
+/* new code 
+
+*/
+
+
 	// default constructor
 	public WebConnector(){
 		// initialize properties
