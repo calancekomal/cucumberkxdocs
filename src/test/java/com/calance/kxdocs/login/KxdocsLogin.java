@@ -4,6 +4,8 @@ package com.calance.kxdocs.login;
 import org.junit.Assert;
 
 import com.calance.kxdocs.login.WebConnector;
+
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,6 +19,7 @@ WebConnector application=new WebConnector();
 	 * 
 	 * 
 	 */
+
 	@Given("^I want to login to kxdocs on \"([a-zA-Z]{1,})\"$")
 	public void gotokxdocs(String browserType) throws InterruptedException{
 		System.out.println("Going to kxdocs on "+browserType);
