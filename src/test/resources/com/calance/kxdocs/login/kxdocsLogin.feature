@@ -4,6 +4,7 @@ In order to access application
 As a admin
 I want to login to Kxdocs
 
+@KxdocsLogin
 Scenario: I want to login to kxdocs application
 Given I want to login to kxdocs on "Chrome"
 And I enter "WelcomeKxDocsEmail" as "kxdocsapp@onirvana.com"
