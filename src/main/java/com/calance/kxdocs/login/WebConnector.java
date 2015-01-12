@@ -3,6 +3,7 @@ package com.calance.kxdocs.login;
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,14 +12,9 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class WebConnector {
 	//Initializing Properties file
-	WebDriver driver = null;
-	Properties OR=null;
+	public static WebDriver driver;
+	Properties OR = null;
 	
-/* new code 
-
-*/
-
-
 	// default constructor
 	public WebConnector(){
 		// initialize properties
@@ -55,6 +51,9 @@ public class WebConnector {
 	public void click(String object){
 		driver.findElement(By.xpath(OR.getProperty(object))).click();
 	}
+	public void clickById(String object){
+		driver.findElement(By.id(OR.getProperty(object))).click();
+	}
 
 	// writing in a text field / select value from a list
 	public void input(String object, String data){
@@ -73,13 +72,48 @@ public class WebConnector {
 		if(count==true)
 			return true;
 		else 
-			return false;
-					
+			return false;					
 		
 	}
 	
+	public boolean IsElementDisplayed(By by, WebDriver driver)
+    {
+        try
+        {
+            return driver.findElement(by).isDisplayed();
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    }
 	public void verifyText(){
 		
 	}
-	
+	 public void IsKXDocsHomePageLoaded() throws Exception
+	 {
+		 try
+         {
+             boolean isHomePageNotLoaded = false;
+             int i = 1;
+             do
+             {
+            	 Thread.sleep(1000);
+                 if (i > 90)
+                 {
+                     isHomePageNotLoaded = true;
+                     break;
+                 }
+                 i++;
+
+             } while (!IsElementDisplayed(By.id(OR.getProperty(("SearchBtnHome"))), driver));
+             if (isHomePageNotLoaded)
+                 throw new Exception("Home page is not open");    
+         }
+         catch (Exception ex)
+         {
+             throw ex;
+         }        
+	 }
+
 }

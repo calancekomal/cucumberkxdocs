@@ -1,6 +1,5 @@
 package com.calance.kxdocs.login;
 
-
 import org.junit.Assert;
 
 import com.calance.kxdocs.login.WebConnector;
@@ -38,8 +37,7 @@ WebConnector application=new WebConnector();
 		System.out.println("Clicking "+ object);
 		application.click(object);
 		Thread.sleep(30);
-	}
-	
+	}	
 	
 	@Then("^login should be \"([a-zA-Z]{1,})\"$")
 	public void verifyLogin(String expectedReslt){
