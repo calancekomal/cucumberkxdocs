@@ -1,84 +1,68 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("com\\calance\\kxdocs\\login\\kxdocsLogin.feature");
 formatter.feature({
-  "line": 1,
-  "name": "I want to login to Kxdocs",
-  "description": "\r\nIn order to access application\r\nAs a admin\r\nI want to login to Kxdocs",
   "id": "i-want-to-login-to-kxdocs",
-  "keyword": "Feature"
+  "description": "\nIn order to access application\nAs a admin\nI want to login to Kxdocs",
+  "name": "I want to login to Kxdocs",
+  "keyword": "Feature",
+  "line": 1
 });
 formatter.before({
-  "duration": 1381548,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 724129,
+  "duration": 1950586,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 21,
-  "name": "I want to login to kxdocs application",
-  "description": "",
-  "id": "i-want-to-login-to-kxdocs;i-want-to-login-to-kxdocs-application;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
+  "id": "i-want-to-login-to-kxdocs;i-want-to-login-to-kxdocs-application",
   "tags": [
     {
-      "line": 8,
-      "name": "@web"
+      "name": "@KxdocsLogin",
+      "line": 7
     }
-  ]
+  ],
+  "description": "",
+  "name": "I want to login to kxdocs application",
+  "keyword": "Scenario",
+  "line": 8,
+  "type": "scenario"
 });
 formatter.step({
-  "line": 10,
   "name": "I want to login to kxdocs on \"Chrome\"",
-  "keyword": "Given "
+  "keyword": "Given ",
+  "line": 9
 });
 formatter.step({
-  "line": 11,
   "name": "I enter \"WelcomeKxDocsEmail\" as \"kxdocsapp@onirvana.com\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
+  "keyword": "And ",
+  "line": 10
 });
 formatter.step({
-  "line": 12,
   "name": "I click on \"WelcomeKXdocsBtnSubmit\"",
-  "keyword": "And "
+  "keyword": "And ",
+  "line": 11
 });
 formatter.step({
-  "line": 13,
   "name": "I enter \"BoxLoginEmailId\" as \"kxdocsapp@onirvana.com\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
+  "keyword": "And ",
+  "line": 12
 });
 formatter.step({
-  "line": 14,
   "name": "I enter \"BoxLoginPassword\" as \"oNirvana20140501\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
+  "keyword": "And ",
+  "line": 13
 });
 formatter.step({
-  "line": 15,
   "name": "I click on \"BoxLoginAuthorizeBtn\"",
-  "keyword": "And "
+  "keyword": "And ",
+  "line": 14
 });
 formatter.step({
-  "line": 16,
   "name": "I click on \"GrantAccessToBoxBtn\"",
-  "keyword": "And "
+  "keyword": "And ",
+  "line": 15
 });
 formatter.step({
-  "line": 17,
-  "name": "login should be \"pass\"",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "Then "
+  "name": "login should be \"success\"",
+  "keyword": "Then ",
+  "line": 16
 });
 formatter.match({
   "arguments": [
@@ -90,7 +74,7 @@ formatter.match({
   "location": "KxdocsLogin.gotokxdocs(String)"
 });
 formatter.result({
-  "duration": 14536502398,
+  "duration": 35338632776,
   "status": "passed"
 });
 formatter.match({
@@ -107,7 +91,7 @@ formatter.match({
   "location": "KxdocsLogin.input(String,String)"
 });
 formatter.result({
-  "duration": 911558133,
+  "duration": 815390528,
   "status": "passed"
 });
 formatter.match({
@@ -120,7 +104,7 @@ formatter.match({
   "location": "KxdocsLogin.click(String)"
 });
 formatter.result({
-  "duration": 199789603,
+  "duration": 150867358,
   "status": "passed"
 });
 formatter.match({
@@ -137,7 +121,7 @@ formatter.match({
   "location": "KxdocsLogin.input(String,String)"
 });
 formatter.result({
-  "duration": 4368028259,
+  "duration": 11336283635,
   "status": "passed"
 });
 formatter.match({
@@ -154,7 +138,7 @@ formatter.match({
   "location": "KxdocsLogin.input(String,String)"
 });
 formatter.result({
-  "duration": 404120125,
+  "duration": 373338496,
   "status": "passed"
 });
 formatter.match({
@@ -167,7 +151,7 @@ formatter.match({
   "location": "KxdocsLogin.click(String)"
 });
 formatter.result({
-  "duration": 2009122321,
+  "duration": 5163928472,
   "status": "passed"
 });
 formatter.match({
@@ -180,152 +164,102 @@ formatter.match({
   "location": "KxdocsLogin.click(String)"
 });
 formatter.result({
-  "duration": 7126586385,
+  "duration": 10270232268,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "pass",
+      "val": "success",
       "offset": 17
     }
   ],
   "location": "KxdocsLogin.verifyLogin(String)"
 });
 formatter.result({
-  "duration": 96669575,
+  "duration": 132952301,
   "status": "passed"
 });
-formatter.before({
-  "duration": 5606587,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 558777,
-  "status": "passed"
+formatter.uri("com\\calance\\kxdocs\\login\\kxdocsLogout.feature");
+formatter.feature({
+  "id": "i-want-to-logout-from-kxdocs",
+  "description": "",
+  "name": "I want to logout from Kxdocs",
+  "keyword": "Feature",
+  "line": 1
 });
 formatter.scenario({
-  "line": 22,
-  "name": "I want to login to kxdocs application",
+  "id": "i-want-to-logout-from-kxdocs;i-want-to-logout-from-kxdocs-application",
   "description": "",
-  "id": "i-want-to-login-to-kxdocs;i-want-to-login-to-kxdocs-application;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 8,
-      "name": "@web"
-    }
-  ]
+  "name": "I want to logout from kxdocs application",
+  "keyword": "Scenario",
+  "line": 3,
+  "type": "scenario"
 });
 formatter.step({
-  "line": 10,
-  "name": "I want to login to kxdocs on \"Chrome\"",
-  "keyword": "Given "
+  "name": "I am logged in KXdocs",
+  "keyword": "Given ",
+  "line": 4
 });
 formatter.step({
-  "line": 11,
-  "name": "I enter \"WelcomeKxDocsEmail\" as \"abc@um.com\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "And "
+  "name": "click on button \"UserSettingsLink\"",
+  "keyword": "And ",
+  "line": 5
 });
 formatter.step({
-  "line": 12,
-  "name": "I click on \"WelcomeKXdocsBtnSubmit\"",
-  "keyword": "And "
+  "name": "click on button \"UserSettingLogoutBtn\"",
+  "keyword": "And ",
+  "line": 6
 });
 formatter.step({
-  "line": 13,
-  "name": "I enter \"BoxLoginEmailId\" as \"abc@um.com\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "I enter \"BoxLoginPassword\" as \"oNirvana20140501\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "I click on \"BoxLoginAuthorizeBtn\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "I click on \"GrantAccessToBoxBtn\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "login should be \"fail\"",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "Then "
+  "name": "logout should be \"success\"",
+  "keyword": "Then ",
+  "line": 7
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Chrome",
-      "offset": 30
-    }
-  ],
-  "location": "KxdocsLogin.gotokxdocs(String)"
+  "location": "KxdocsLogout.VerifyKXDocsHomePageLoaded()"
 });
 formatter.result({
-  "duration": 13574569942,
+  "duration": 1082582026,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "WelcomeKxDocsEmail",
-      "offset": 9
-    },
-    {
-      "val": "abc@um.com",
-      "offset": 33
+      "val": "UserSettingsLink",
+      "offset": 17
     }
   ],
-  "location": "KxdocsLogin.input(String,String)"
+  "location": "KxdocsLogout.clickById(String)"
 });
 formatter.result({
-  "duration": 668227821,
+  "duration": 326379607,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "WelcomeKXdocsBtnSubmit",
-      "offset": 12
+      "val": "UserSettingLogoutBtn",
+      "offset": 17
     }
   ],
-  "location": "KxdocsLogin.click(String)"
+  "location": "KxdocsLogout.clickById(String)"
 });
 formatter.result({
-  "duration": 257790094,
-  "status": "passed"
+  "duration": 194187927,
+  "status": "failed",
+  "error_message": "org.openqa.selenium.ElementNotVisibleException: element not visible\n  (Session info: chrome\u003d39.0.2171.65)\n  (Driver info: chromedriver\u003d2.10.267521,platform\u003dWindows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 73 milliseconds\nBuild info: version: \u00272.44.0\u0027, revision: \u002776d78cf323ce037c5f92db6c1bba601c2ac43ad8\u0027, time: \u00272014-10-23 13:11:40\u0027\nSystem info: host: \u0027calance9\u0027, ip: \u0027192.168.1.4\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.7.0_71\u0027\nSession ID: 1812ba8dc966ae4879b350e116f14b6b\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{platform\u003dWIN8_1, acceptSslCerts\u003dtrue, javascriptEnabled\u003dtrue, browserName\u003dchrome, chrome\u003d{userDataDir\u003dC:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir6208_9465}, rotatable\u003dfalse, locationContextEnabled\u003dtrue, version\u003d39.0.2171.65, takesHeapSnapshot\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, browserConnectionEnabled\u003dfalse, webStorageEnabled\u003dtrue, nativeEvents\u003dtrue, applicationCacheEnabled\u003dfalse, takesScreenshot\u003dtrue}]\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)\r\n\tat com.calance.kxdocs.login.WebConnector.clickById(WebConnector.java:55)\r\n\tat com.calance.kxdocs.login.KxdocsLogout.clickById(KxdocsLogout.java:37)\r\n\tat ✽.And click on button \"UserSettingLogoutBtn\"(com\\calance\\kxdocs\\login\\kxdocsLogout.feature:6)\r\n"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "BoxLoginEmailId",
-      "offset": 9
-    },
-    {
-      "val": "abc@um.com",
-      "offset": 30
+      "val": "success",
+      "offset": 18
     }
   ],
-  "location": "KxdocsLogin.input(String,String)"
+  "location": "KxdocsLogout.verifyLogin(String)"
 });
 formatter.result({
-  "duration": 20121228968,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element\n  (Session info: chrome\u003d39.0.2171.95)\n  (Driver info: chromedriver\u003d2.10.267521,platform\u003dWindows NT 6.2 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 20.05 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.44.0\u0027, revision: \u002776d78cf323ce037c5f92db6c1bba601c2ac43ad8\u0027, time: \u00272014-10-23 13:11:40\u0027\nSystem info: host: \u0027calance_123\u0027, ip: \u0027192.168.1.4\u0027, os.name: \u0027Windows 8\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.2\u0027, java.version: \u00271.8.0_25\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, chrome\u003d{userDataDir\u003dC:\\Users\\KOMALM~1\\AppData\\Local\\Temp\\scoped_dir6600_23795}, takesHeapSnapshot\u003dtrue, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d39.0.2171.95, platform\u003dWIN8, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dtrue, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: ec61e9d33f2dc8162a101664c5e6e19f\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\
+  "status": "skipped"
+});
+});
