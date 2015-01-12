@@ -12,12 +12,7 @@ import cucumber.api.java.en.Then;
 public class KxdocsLogin {
 	
 WebConnector application=new WebConnector();
-	/*
-	 * 
-	 * Added new code
-	 * 
-	 * 
-	 */
+	
 
 	@Given("^I want to login to kxdocs on \"([a-zA-Z]{1,})\"$")
 	public void gotokxdocs(String browserType) throws InterruptedException{
